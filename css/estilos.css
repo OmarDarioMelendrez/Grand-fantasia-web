@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+h1{
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.5em;
+    color: white;
+}
+h1 strong{
+    color: #FF8C00;
+}
+
+/* --------------HEADER */
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    height: 70px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.header a{
+    color: #FFF;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header ol li{
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.container {
+    border: 0;
+    margin: 0 auto;
+    width: 1000px;
+    display: inherit;
+    justify-content: space-between;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: wrap;
+  }
+.menu{
+    display: block;
+}
+
+/* --------------END HEADER */
+
+
+/* --------------HERO */
+
+.hero{
+    height: 300px;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container img{
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------------END HERO */
+
+/* --------------ARTICULOS */
+.sobre-el-juego{
+    background: #FAFAFA;
+}
+.sobre-el-juego .container li{
+    margin-bottom: 10px;
+}
+.container h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 25px 0 15px 0;
+}
+.article{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+.article h3{
+    color: #FF8C00;
+}
+.article-details{
+    display: inherit;
+}
+.article-title h1{
+    color: black;
+}
+.article-description{
+    max-width: 49%;
+}
+.article-image-container{
+    width: 49%;
+    text-align: center;
+}
+.article-image{
+    width: 100%;
+}
+/* --------------END ARTICULOS */

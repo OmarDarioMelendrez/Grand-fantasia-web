@@ -187,7 +187,7 @@ h1 strong{
 .contact{
     background-color: #FF8C00;
     color: #FFF;
-    height: 150px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -210,7 +210,16 @@ h1 strong{
     background-size: 50px 50px;
 }
 
-.form-email input{
+.form-email{
+    vertical-align: middle;
+}
+.form-email a{
+    color: white;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+}
+/* .form-email input{
     border-style: solid;
     border-color: grey;
     border-radius: 5px;
@@ -229,7 +238,7 @@ h1 strong{
     color: white;
     width: 100px;
     margin: 10px auto;
-}
+} */
 /* --------------END CONTACT */
 
 /* --------------FOOTER */

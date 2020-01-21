@@ -73,6 +73,7 @@ h1 strong{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 25px 0px 25px 0px;
 }
 .container img{
     height: 100%;
@@ -84,6 +85,7 @@ h1 strong{
 /* --------------ARTICULOS */
 .sobre-el-juego{
     background: #FAFAFA;
+    padding: 15px 0 10px 0;
 }
 .sobre-el-juego .container li{
     margin-bottom: 10px;
@@ -91,7 +93,8 @@ h1 strong{
 .container h2{
     margin-top: 0;
     margin-bottom: 0;
-    padding: 25px 0 15px 0;
+    padding: 0px 0 5px 0;
+    font-size: 30px;
 }
 .article{
     border: 1px solid gray;
@@ -122,3 +125,59 @@ h1 strong{
     width: 100%;
 }
 /* --------------END ARTICULOS */
+
+
+/* --------------DUNGEONS */
+.dungeons{
+    background: #FAFAFA;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dungeon-article{
+    border: 1px solid gray;
+    background: #1b2127;
+    border-radius: 10px;
+    overflow: hidden;
+    /* flex-shrink: 0; */
+    margin: 10px;
+    width: 47%;
+}
+.dungeon-image-cotainer{
+    width: 100%;
+}
+.dungeon-image{
+    width: 100%;
+}
+.dungeon-details{
+    margin: 20px 40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.dungeon-title{
+    color: #FF8C00;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.dungeon-description{
+    text-align: left;
+}
+.dungeon-url{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    text-align: center;
+    border-radius: 5px;
+}
+.dungeon-url:hover{
+    color: white;
+    background-color: #1b2127;
+    border: none;
+}
+/* --------------END DUNGEONS */

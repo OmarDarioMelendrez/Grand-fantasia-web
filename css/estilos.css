@@ -181,3 +181,71 @@ h1 strong{
     border: none;
 }
 /* --------------END DUNGEONS */
+
+
+/* --------------CONTACT */
+.contact{
+    background-color: #FF8C00;
+    color: #FFF;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+    /* border: 1px solid red; */
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid white; */
+}
+.social-link.github{
+    background-image: url(../images/github.svg);
+    background-size: 50px 50px;
+}
+.social-link.instagram{
+    background-image: url(../images/instagram.svg);
+    background-size: 50px 50px;
+}
+
+.form-email input{
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+    padding: 5px 30px;
+    background-image: url(../images/envelope.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    width: 100px;
+    margin: 10px auto;
+}
+/* --------------END CONTACT */
+
+/* --------------FOOTER */
+
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle;
+    width: 30px;
+}
+.footer a{
+    color: white;
+}
+/* --------------END FOOTER */

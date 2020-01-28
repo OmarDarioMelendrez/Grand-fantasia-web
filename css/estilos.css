@@ -1,3 +1,34 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?v43n9o');
+    src:  url('../fonts/icomoon.eot?v43n9o#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?v43n9o') format('truetype'),
+      url('../fonts/icomoon.woff?v43n9o') format('woff'),
+      url('../fonts/icomoon.svg?v43n9o#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -13,13 +44,17 @@ h1{
 h1 strong{
     color: #FF8C00;
 }
+.html-video{
+    max-width: 100%;
+    width: 100%;
+}
 
 /* --------------HEADER */
 
 .header{
     background-color: #1b2127;
     color: white;
-    height: 70px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -76,26 +111,37 @@ h1 strong{
 /* --------------HERO */
 
 .hero{
-    height: 300px;
+    height: auto;
     background-color: #1b2127;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 25px 0px 25px 0px;
+    overflow: hidden;
 }
-.container img{
-    width: 500px;
-    object-fit: cover;
+.container{
+    max-width: 1000px;
+    position: relative;
+    padding: 1em 0;
 }
-.container h1{
-    width: 500px;
-    text-align: left;
+.container .hero-h1{
+    width: 80%;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
-.article-image-container{
-    display: flex;
-}
+.hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
+}
 /* --------------END HERO */
 
 /* --------------ARTICULOS */
@@ -136,6 +182,7 @@ h1 strong{
     justify-content: center;
     margin: 0;
     overflow: hidden;
+    display: flex;
 }
 .article-image{
     max-width: 100%;
@@ -162,7 +209,7 @@ h1 strong{
     border-radius: 10px;
     overflow: hidden;
     /* flex-shrink: 0; */
-    margin: 10px;
+    margin: 10px 0px;
     width: 47%;
     display: block;
 }
@@ -206,6 +253,23 @@ h1 strong{
     background-color: #1b2127;
     border: none;
 }
+.container img{
+    width: 100%;
+}
+.flexible-video{
+    width: 100%;s
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+.youtube-video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 /* --------------END DUNGEONS */
 
 
@@ -213,11 +277,12 @@ h1 strong{
 .contact{
     background-color: #FF8C00;
     color: #FFF;
-    height: 100px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 1em 1em;
 }
 .social-link{
     display: inline-block;
@@ -253,6 +318,8 @@ h1 strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1em;
 }
 .footer img{
     vertical-align: middle;
@@ -265,10 +332,34 @@ h1 strong{
 
 
 /* --------------Media queri desktop first */
+
+@media screen and (max-width: 1240px) {
+    .container{
+        padding: 0 1em;
+    }
+    .hero{
+        position: relative;
+        overflow: hidden;
+    }
+    .hero h1{
+        z-index: 2;
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 677px) {
     .header{
         display: block;
-        height: auto;
+        height: ;
     }
     .header ol{
         display: block;
@@ -286,6 +377,14 @@ h1 strong{
         width: fit-content;
         color: #FF8C00;
     }
+    .hero{
+        padding: 1em 0;
+        height: auto;
+    }
+    .sobre-el-juego{
+        max-width: 1000px;
+        width: 100%;
+    }
     .article-image-container{
         width: 100%;
     }
@@ -296,10 +395,61 @@ h1 strong{
         width: auto;
     }
     .container{
-        margin: 5px 15px 5px 15px;
+        margin: 0px 15px 0px 15px;
     }
     .dungeon-article{
         width: 100%;
+    }
+    .dungeon-details{
+        margin: 10px 15px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .container .hero-h1{
+        font-size: 1.9em;
+    }
+    .container h2{
+        font-size: 25px;
+    }
+    .contact{
+        display: block;
+        text-align: center;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .header h1{
+        font-size: 30px;
+    }
+    .container{
+        margin: 0px 5px 0px 5px;
+        padding: 0 .5em;
+
+    }
+    .container .hero-h1{
+        font-size: 1em;
+    }
+    .container h2{
+        font-size: 15px;
+    }
+    .article h3{
+        font-size: 15px;
+    }
+    .contact{
+        display: block;
+        text-align: center;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        padding: 1px;
     }
 }
 

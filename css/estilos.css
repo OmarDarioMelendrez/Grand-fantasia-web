@@ -78,12 +78,14 @@ h1 strong{
     text-decoration: none;
     padding: 0 10px;
     display: flex;
-    height: inherit;
+    height: 40px;
+    font-size: 1em;
     align-items: center;
+
 }
 .header ol{
     display: flex;
-    height: inherit;
+    height: auto;
     align-items: center;
     list-style: none;
     margin: 0;
@@ -107,7 +109,12 @@ h1 strong{
   }
 .menu{
     height: inherit;
-    display: inherit;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.menu.is-active{
+    left: 0;
 }
 .logo-content{
     height: inherit;
@@ -373,6 +380,18 @@ h1 strong{
     .burger-button{
         display: block;
     }
+    .menu{
+        position: fixed;
+        background: rgba(255, 140, 0, .9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: .3s;
+    
+    }
     .header{
         display: block;
         height: ;
@@ -386,6 +405,16 @@ h1 strong{
     }
     .header a{
         justify-content: center;
+        color: #FFF;
+        text-decoration: none;
+        padding: 0 10px;
+        display: flex;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+        align-items: center;
+        
     }
     .header .logo-content h1{
         display: block;
@@ -424,7 +453,7 @@ h1 strong{
 
 @media screen and (max-width: 480px){
     .container .hero-h1{
-        font-size: 1.9em;
+        font-size: 1.6em;
     }
     .container h2{
         font-size: 25px;
@@ -442,7 +471,7 @@ h1 strong{
 
 @media screen and (max-width: 320px){
     .header h1{
-        font-size: 30px;
+        font-size: 2em;
     }
     .container{
         margin: 0px 5px 0px 5px;
@@ -450,7 +479,7 @@ h1 strong{
 
     }
     .container .hero-h1{
-        font-size: 1em;
+        font-size: 20px;
     }
     .container h2{
         font-size: 15px;
